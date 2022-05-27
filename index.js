@@ -1,3 +1,4 @@
+import Layouts from './Layouts.js'
 class Euclid {
     constructor({width, height, dom_target_id, ctx_settings, dev_mode = false}) {
       this.euclid_settings = {
@@ -18,7 +19,7 @@ class Euclid {
         this.ctx[setting_name] = ctx_settings[setting_name]
       }); // Apply all settings to canvas context.
 
-      this.components = []; // Empty list of graphical components managed by Euclid.
+      this.components = []; // List of graphical components managed by Euclid.
     }
 
     /**
